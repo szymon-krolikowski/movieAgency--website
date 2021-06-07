@@ -12,6 +12,57 @@ html
     font-family: 'Overpass', sans-serif
     font-size: 62.5%
     scroll-behavior: smooth
+    background-color: $black
+    color: $white
+
+.navigation
+    width: 100vw
+    height: 10vh
+    padding: 50px 30px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+
+    &__button
+        position: relative
+
+    &__span
+        position: relative
+        text-transform: uppercase
+        font-size: 1.3rem
+        letter-spacing: 3px
+        z-index: 1
+
+    &__svg
+        position: absolute
+        top: -14px
+        left: 13px
+        transform: rotate(225deg)
+
+    &__circle
+        fill: none
+        stroke: $gray
+        stroke-width: 1px
+        stroke-dasharray: 95
+
+.logo
+    width: 25px
+    display: flex
+    align-items: flex-end
+    justify-content: space-around
+
+    &__firstLine
+        width: 5px
+        height: 40px
+        background-color: $white
+        transform: rotate(2deg) skew(-15deg)
+
+    &__secondLine
+        width: 5px
+        height: 25px
+        background-color: $white
+        transform: rotate(-2deg) skew(15deg)
 
 @import "./_medium"
 @import "./_large"
